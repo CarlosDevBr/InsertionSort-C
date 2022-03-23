@@ -10,14 +10,8 @@ int main(){
 	        troca          = vetor[temp];
 	        vetor[temp]   = vetor[temp-1];
 	        vetor[temp-1] = troca;
-	        temp--;
-	        
-			if(vetor[temp] > vetor[temp-1]) break;
-	        if (temp == 0) break;	
-			}              
-	    }
-	    
-	    for (int i=0; i < TAM; i++){
-	    	printf(" %d ", vetor[i]);
-		}
+	        temp--;	              
+			}
+	}
+	for (int i=0; i < TAM; i++) printf("%d ", vetor[i]);
 }
